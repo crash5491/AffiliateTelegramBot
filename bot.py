@@ -53,8 +53,8 @@ def filterText(update, context):
         if m != None:
             pCode = m.group(0)
         context.bot.send_message(chat_id=update.message.chat_id,reply_to_message_id=update.message.message_id, text=newReferURL(pCode))
-        context.bot.send_message(chat_id=update.message.chat_id,reply_to_message_id=-1001071476765, text=newReferURL(pCode))
-        context.bot.send_message(chat_id=-1001071476765,reply_to_message_id=update.message.message_id, text=newReferURL(pCode))
+         context.bot.send_message(chat_id=-1001071476765, text==newReferURL(pCode))
+        
         
 def main():
     """Start the bot."""
