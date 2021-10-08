@@ -51,8 +51,8 @@ def filterText(update, context):
         m = re.search(r'(?:dp\/[\w]*)|(?:gp\/product\/[\w]*)',msg[start:].split(" ")[0])
         if m != None:
             pCode = m.group(0)
-                context.bot.send_message(chat_id=update.message.chat_id,reply_to_message_id=update.message.message_id, text=newReferURL(pCode))
-           
+        context.bot.send_message(chat_id=update.message.chat_id,reply_to_message_id=update.message.message_id, text=newReferURL(pCode))
+
 def main():
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
